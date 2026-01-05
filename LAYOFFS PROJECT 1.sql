@@ -43,10 +43,7 @@ FROM duplicate_cte
 WHERE row_num >1;
 
 
-    --  so lets try diff way to delete!!!!!!!!!!!!!!!!!!!
-    
-    
-  -- we will make new table -> right clik at the layoffs_staging > coppy to clipboard > create statement and paste it down here and just change the name of the tbale
+   
   
   CREATE TABLE `layoffs_staging2` (
   `company` text,
@@ -189,7 +186,7 @@ ALTER TABLE layoffs_staging2    -- getting rid off COLUMN row_num
 DROP COLUMN row_num;
 
 
--- So what I did:
+-- what I did in here:
 -- removed duplicate, 
 -- standardised the data
 -- dealt with null/blank values
